@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Euler Solutions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+            background-color: #f8f8f8;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        .intro {
+            margin-bottom: 30px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .problem-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .problem-card {
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .problem-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .problem-card h3 {
+            margin-top: 0;
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+        .problem-card p {
+            margin-bottom: 10px;
+        }
+        .difficulty {
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            font-weight: bold;
+            color: white;
+        }
+        .easy {
+            background-color: #27ae60;
+        }
+        .medium {
+            background-color: #f39c12;
+        }
+        .hard {
+            background-color: #e74c3c;
+        }
+        .tags {
+            margin-top: 10px;
+        }
+        .tag {
+            display: inline-block;
+            background-color: #eee;
+            padding: 2px 8px;
+            border-radius: 3px;
+            font-size: 0.8em;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            color: #555;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #777;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Project Euler Solutions</h1>
+    </header>
+
+    <section class="intro">
+        <h2>About Project Euler</h2>
+        <p>
+            <a href="https://projecteuler.net/" target="_blank">Project Euler</a> is a series of challenging mathematical and computational problems that require more than just mathematical insights to solve. Although mathematics will help you arrive at elegant and efficient methods, the use of computer programming is required to solve most problems.
+        </p>
+        <p>
+            This section of my website contains my solutions to various Project Euler problems. Each solution includes:
+        </p>
+        <ul>
+            <li>A detailed explanation of my approach</li>
+            <li>Code implementation (primarily in Python)</li>
+            <li>Time and space complexity analysis</li>
+            <li>Additional insights and alternative approaches</li>
+        </ul>
+        <p>
+            <strong>Note:</strong> The purpose of sharing these solutions is educational. I encourage you to attempt solving the problems on your own before looking at my solutions.
+        </p>
+    </section>
+
+    <h2>Solutions</h2>
+    <div class="problem-grid">
+        <div class="problem-card">
+            <h3>Problem 2</h3>
+            <p>Even Fibonacci Numbers</p>
+            <span class="difficulty easy">Easy</span>
+            <p>Find the sum of even-valued Fibonacci terms not exceeding four million.</p>
+            <div class="tags">
+                <span class="tag">Fibonacci</span>
+                <span class="tag">Sequences</span>
+                <span class="tag">Dynamic Programming</span>
+            </div>
+            <p><a href="./problem_2.html">View Solution →</a></p>
+        </div>
+    </div>
+    
+    <div style="margin-top: 30px; text-align: center; padding: 20px; background-color: #fff; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+        <p>More solutions coming soon! Check back later for additional problems.</p>
+    </div>
+
+    <footer>
+        <p>© 2025 · All solutions are my own work unless otherwise noted.</p>
+        <p>Project Euler is Copyright © 2004-2025 Project Euler.</p>
+    </footer>
+</body>
+</html>
