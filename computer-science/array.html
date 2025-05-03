@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arrays in Computer Science</title>
+</head>
+<body>
+  <h1>Arrays in Computer Science</h1>
+  <p>An <strong>array</strong> is a collection of elements of the same data type, stored sequentially in memory. Each
+    element can be accessed directly using an index, which represents its position within the array. Arrays are a
+    fundamental data structure in computer science, with native support in programming languages like C, C++, Java,
+    JavaScript, Python, and more.</p>
+  <p>Common algorithms done on arrays are searching and sorting. Some of the most efficient array search algorithms,
+    like binary search, assume the array is sorted beforehand.</p>
+  <p>A <em>subarray</em> is a contiguous subset of an array. For example, given the array
+    <code>[2, 6, 1, 10, 7, 14, 3]</code>, a subarray would be <code>[1, 10, 7]</code>.</p>
+  <p>A <em>subsequence</em> of an array means deleting some or no elements without changing the overall order. A
+    subsequence of the above array might be <code>[6, 10, 7]</code>, but not <code>[10, 6, 2]</code>.</p>
+  <h2>Navigation Using Initial Address</h2>
+  <p>Given an array of five 2-byte elements located at memory location 1000, the memory location of the <em>i</em>-th
+    element can be found using the equation <code>1000 + (i x 2)</code>. In other words, the memory location of the
+    fourth element (index 3) will be <code>1000 + (3 x 2)</code> = <code>1006</code>. Note that because this equation
+    doesn't depend on the size of the array - only its initial memory address and element size - accessing arbitrary
+    elements in an array is an <code>O(1)</code> operation.</p>
+  <div>
+    <h2>Advantages of Arrays</h2>
+    <ul>
+      <li>Simple and intuitive design. A list of elements in contiguous memory locations is one of the easiest to
+        understand.</li>
+      <li>Low overhead. No need to maintain pointers for every element in the array. We simply have to know the initial
+        memory location, element size, and overall array size, and we can access all subsequent elements.</li>
+      <li>Efficient navigation due to constant-time random access.</li>
+      <li>Because they are contained in a contiguous sequence of memory, arrays are very <em>cache-friendly</em>. If a
+        program accesses one element of an array, it's likely it will access its neighbors relatively soon. Since the
+        elements are physically stored one after the other, a CPU can cache an entire chunk of memory, storing not just
+        one element, but all nearby elements as well, avoiding unnecessary memory queries.</li>
+    </ul>
+  </div>
+  <div>
+    <h2>Disadvantages of Arrays</h2>
+    <ul>
+      <li>Depending on the implementation, arrays can be fixed in size. If you fill an array and want to store another
+        element, you have to re-allocate an entirely new array and copy over the elements from the old one to the new,
+        taking <code>O(n)</code> time. However, with a proper resizing factor, we can reduce this penalty as the array
+        gets larger and larger.</li>
+      <li>Inefficient insertion and deletion. While traversal is cheap, inserting or deleting an element into an array
+        requires shifting all subsequent elements. The best-case scenario is inserting/deleting the last element,
+        avoiding this penalty. The worst-case is inserting or deleting at the beginning, requiring the entire rest of
+        the array to be readjusted.</li>
+      <li>Space inefficient. If we have an array of size 10 but only use 2 spaces, the remaining 8 spaces are being
+        wasted until we fill them.</li>
+    </ul>
+  </div>
+</body>
+</html>
