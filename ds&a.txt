@@ -11,3 +11,6 @@ This usually involves determining a function that relates the size of an algorit
 ## Data Structures
 A data organization and storage format that is usually chosen for efficient access to data. More precisely, a data structure is a collection of data values, the relationships among them, and the functions or operations that can be applied to the data. Efficient data structures are usually key to designing efficient algorithms.
 
+## TOREAD:
+- https://en.wikipedia.org/wiki/Algorithm
+- https://en.wikipedia.org/wiki/Data_structure
