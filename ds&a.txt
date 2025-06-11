@@ -1,0 +1,13 @@
+# Algorithms & Data Structures
+## Algorithms
+A finite sequence of mathematically rigorous instructions used to solve a class of problems or perform a computation.
+An algorithm can be implemented as a computer program, a biological neural network, an electrical circuit, or a mechanical device.
+The word "algorithm" originates from al-Khwarizmi, an Islamic Golden Age mathematician.
+
+### Analysis of Algorithms
+The process of finding the computational complexity of algorithms -- the amount of time, storage, or other resources needed to execute them.
+This usually involves determining a function that relates the size of an algorithm's input to the number of steps it takes (its time complexity) or the number of storage locations it uses (its space complexity). Coined by Donald Knuth.
+
+## Data Structures
+A data organization and storage format that is usually chosen for efficient access to data. More precisely, a data structure is a collection of data values, the relationships among them, and the functions or operations that can be applied to the data. Efficient data structures are usually key to designing efficient algorithms.
+
