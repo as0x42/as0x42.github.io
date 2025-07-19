@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Documentation - Core Language</title>
+</head>
+<body>
+    <h1>Python - Core Language</h1>
+    
+    <h2><code>if</code> Statements</h2>
+    <p>Like many programming languages, Python supports conditionals using <code>if</code> statements. The simplest <code>if</code> statement in Python involves the keyword, a conditional, and the code to run if the conditional result is True:</p>
+    
+    <pre><code>x = 24
+if x > 20:
+  print('X is greater than 20.')</code></pre>
+    
+    <p>Additional conditions can be tested with <code>elif</code>, short for <code>else if</code>:</p>
+    
+    <pre><code>x = 16
+if x > 20:
+  print('X is greater than 20.')
+elif x > 10:
+  print('X is between 10 and 20.')</code></pre>
+    
+    <p>Finally, the <code>else</code> statement is a "catchall" that is called if the initial conditional(s) fail.</p>
+    
+    <pre><code>x = 5
+if x > 20:
+  print('X is greater than 20.')
+elif x > 10:
+  print('X is between 10 and 20.')
+else:
+  print('X is less than 10.')</code></pre>
+    
+    <h2>Python - random</h2>
+    <p>Standard library Python module for pseudorandom number generation.</p>
+    
+    <h3>Functions</h3>
+    
+    <p><strong>random.randint(a, b):</strong></p>
+    <p>Return a random integer N between <code>a</code> and <code>b</code> inclusive.</p>
+    
+    <p><strong>random.choice(seq):</strong></p>
+    <p>Return a random element from the non-empty sequence provided as an argument. If the sequence is empty, raises an IndexError. Either check the length of the sequence before passing it to this function, or be prepared to handle the error. "Sequence" means this function supports lists, strings, and tuples.</p>
+</body>
+</html>
