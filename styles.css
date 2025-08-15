@@ -1,0 +1,29 @@
+body {
+  font-family: sans-serif;
+  color: #333;
+}
+
+.container {
+  width: 970px;
+}
+
+.pico {
+  float: left;
+  margin-right: 10px;
+}
+
+.pico img {
+  height: 80px;
+  border-radius: 5px;
+  border: 1px solid #999;
+}
+
+.project {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.pend {
+  clear: both;
+}
